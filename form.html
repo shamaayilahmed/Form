@@ -1,0 +1,68 @@
+
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="align-center">Survey Form</h1>
+    <p id="description" class="description align-center">Warm hearted thanks for everyone taking concern</p>
+  </header>
+  <form id="survey-form">
+    <div class="form-set">    <label for="name" id="name-label">Name</label>
+     <input type="text" id="name" placeholder="Enter your name" class="form-content" name="name" required/>
+    </div>
+    
+    <div class="form-set">
+     <label for="email" id="email-label">E-mail</label>
+  <input type="email" id="email" name="email" placeholder="Enter your Email" class="form-content" required/>
+    </div>
+    
+    <div class="form-set">
+      <label for="number" id="number-label">Age<span class="additional">(optional)</span></label>
+      <input type="number" id="number"
+         name="age" placeholder="Age" min="10" max="100" class="form-content"/>
+     </div>
+  
+     <div class="form-set">
+       <p>Your proffesion</p>
+        <select id="dropdown" class="form-content" name="role" required>
+    <option disabled selected value>Select current role</option>
+    <option value="student">Student</option>
+    <option value="parttimejob">Part time job</option>
+    <option value="fulltimejob">Full time job</option>
+    <option value="owner">Owner</option>
+    <option value="others">Others</option>
+        </select>
+      </div>
+        
+      <div class="form-set">
+        <p>Done this before</p>
+        <label>
+          <input type="radio" name="test" value="Yes" class="input-radio" checked>Yes
+        </label>  
+        <label>
+          <input type="radio" name="test" value="No" class="input-radio">No
+        </label>
+        </div>
+        
+        <div class="form-set">
+          <p>Healthy<span class="additional">(Select all that apply)</span></p>
+          <label>
+            <input type="checkbox" name="symptoms" value="fever" class="input-check"/>6-8 Hours sleep</label>
+          <label>
+            <input type="checkbox" name="symptoms" value="cough" class="input-check"/>Daily workout</label>
+          <label>
+            <input type="checkbox" name="symptoms" value="running nose" class="input-check"/>Nutrition diet</label>
+          <label>
+            <input type="checkbox" name="symptoms" value="breathing difficulties" class="input-check"/>Naps</label>
+         <label>
+            <input type="checkbox" name="symptoms" value="body ache" class="input-check"/>Health Cheackup</label>
+        </div>
+      
+        <div class="form-set">
+          <p>Share a day in your life.</p>
+          <textarea id="comments" class="input-text" name="comment" placeholder="type here..."></textarea>
+        </div>
+        
+        <div class="form-set">
+          <button type="submit" id="submit" class="submit-button">Submit</button>
+        </div>
+     </form>
+    </div>   
